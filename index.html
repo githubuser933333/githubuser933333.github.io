@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Form</title>
+    <title>Code Entry Form</title>
     <style>
         body {
             display: flex;
@@ -26,18 +26,24 @@
     </style>
 </head>
 <body>
-    <h1>Enter Your Name</h1>
-    <form id="redirectForm">
-        <input type="text" id="name" placeholder="Your Name" required />
+    <h1>Enter the Code</h1>
+    <form id="codeForm">
+        <input type="text" id="code" placeholder="Enter Code" required />
         <button type="submit">Submit</button>
     </form>
 
     <script>
-        document.getElementById('redirectForm').addEventListener('submit', function(event) {
+        document.getElementById('codeForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
-            const name = document.getElementById('name').value;
-            const url = `https://example.com/welcome?name=${encodeURIComponent(name)}`;
-            window.location.href = url; // Redirect to the specified URL
+            const enteredCode = document.getElementById('code').value;
+            const correctCode = '1SKJ8';
+            const url = 'https://example.com/success'; // Change this to your desired URL
+
+            if (enteredCode === correctCode) {
+                window.location.href = url; // Redirect to the specified URL
+            } else {
+                alert('Incorrect code. Please try again.'); // Alert for incorrect code
+            }
         });
     </script>
 </body>
