@@ -12,6 +12,7 @@
             height: 100vh;
             flex-direction: column;
             font-family: Arial, sans-serif;
+            transition: background-color 0.5s;
         }
         input {
             padding: 10px;
@@ -37,11 +38,20 @@
             event.preventDefault(); // Prevent the default form submission
             const enteredCode = document.getElementById('code').value;
             const correctCode = '1SKJ8';
-            const url = 'https://githubuser933333.github.io/escape.html'; // Change this to your desired URL
+            const successUrl = 'https://example.com/success'; // Change this to your desired URL
 
             if (enteredCode === correctCode) {
-                window.location.href = url; // Redirect to the specified URL
+                document.body.style.backgroundColor = 'green'; // Change background to green
+                setTimeout(() => {
+                    window.location.href = successUrl; // Redirect after 500 milliseconds
+                }, 500);
             } else {
+                document.body.style.backgroundColor = 'red'; // Flash red background
+                
+                setTimeout(() => {
+                    document.body.style.backgroundColor = ''; // Reset background color
+                }, 500); // Change back after 500 milliseconds
+                
                 alert('Incorrect code. Please try again.'); // Alert for incorrect code
             }
         });
