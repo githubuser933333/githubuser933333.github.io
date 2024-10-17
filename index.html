@@ -44,13 +44,13 @@
                 document.body.style.backgroundColor = 'green'; // Change background to green
                 setTimeout(() => {
                     window.location.href = successUrl; // Redirect after 500 milliseconds
-                }, 500);
+                }, 2000);
             } else {
                 document.body.style.backgroundColor = 'red'; // Flash red background
                 
                 setTimeout(() => {
                     document.body.style.backgroundColor = ''; // Reset background color
-                }, 500); // Change back after 500 milliseconds
+                }, 2000); // Change back after 500 milliseconds
                 
                 alert('Incorrect code. Please try again.'); // Alert for incorrect code
             }
