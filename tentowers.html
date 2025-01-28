@@ -9,33 +9,39 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff; /* White background */
         }
         header {
-            background: #35424a;
-            color: #ffffff;
+            background: #ff0000; /* Red */
+            color: #ffffff; /* White text */
             padding: 10px 0;
             text-align: center;
         }
         nav {
             margin: 15px 0;
+            background: #0000ff; /* Blue */
+            padding: 10px;
         }
         nav a {
             margin: 0 15px;
-            color: #ffffff;
+            color: #ffffff; /* White text */
             text-decoration: none;
+        }
+        nav .submenu {
+            margin-top: 10px;
+            padding-left: 20px;
         }
         main {
             padding: 20px;
-            background: #ffffff;
+            background: #ffffff; /* White */
             max-width: 800px;
             margin: auto;
         }
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #35424a;
-            color: #ffffff;
+            background: #ff0000; /* Red */
+            color: #ffffff; /* White text */
             position: relative;
             bottom: 0;
             width: 100%;
@@ -49,25 +55,64 @@
 </header>
 
 <nav>
-    <a href="#section1">Section 1</a>
-    <a href="#section2">Section 2</a>
-    <a href="#section3">Section 3</a>
+    <a href="#section1">Rides</a>
+    <div class="submenu">
+        <a href="#childrensRides">Children's Rides</a>
+        <a href="#thrillerRides">Thriller Rides</a>
+        <a href="#adrenalineRides">Adrenaline Addict's Rides</a>
+    </div>
+    <a href="#section2">Guidelines</a>
+    <a href="#section3">Prices</a>
 </nav>
 
 <main>
     <section id="section1">
         <h2>Rides</h2>
-        <p>rides here</p>
+        <p>We've got several rides for everyone, but, just for you, we'll show ya a sneak peak of a few.</p>
+    </section>
+
+    <section id="childrensRides">
+        <h3>Children's Rides</h3>
+        <p>
+### 1. **Planky's Penguin Slide**
+Join Planky, the playful penguin, on this exhilarating slide! Children can climb to the top of a snowy mountain and zoom down on colorful sleds. With gentle twists and turns, this ride is perfect for young adventurers looking for a fun and safe way to experience the joy of winter.
+
+### 2. **Mr. Garn's Giant Adventure**
+Hop aboard Mr. Garn's friendly ogre train for a delightful journey through the enchanted forest! This slow-moving ride features whimsical scenery, friendly creatures, and the occasional surprise from Mr. Garn himself. Kids will love waving at the characters as they explore the magical surroundings.
+
+### 3. **Flags' Firefly Flight**
+Soar high with Flags, the majestic phoenix, on this enchanting flying ride! Children can hop into colorful bird-shaped cars and take to the skies, gliding above the park as they admire the beautiful views. As they circle around, Flags will guide them with his fiery glow, making every flight a memorable experience.
+
+### 4. **Planky's Snowball Toss**
+Join Planky for a fun game of snowball toss! This interactive ride lets kids launch soft, plush snowballs at targets while riding on a spinning platform. With laughter and friendly competition, children will enjoy testing their aim while having a blast in the winter wonderland.
+
+### 5. **Mr. Garn's Treasure Hunt**
+Embark on a treasure-seeking adventure with Mr. Garn! On this gentle boat ride, kids will navigate through a whimsical lagoon filled with hidden treasures and friendly creatures. Along the way, they'll hear stories from Mr. Garn and learn about the magic of friendship and kindness.
+
+### 6. **Flags' Colorful Carousel**
+Take a spin on Flags' vibrant carousel, featuring beautifully painted phoenixes and other enchanting creatures! With gentle music and colorful lights, this classic ride offers a magical experience for little ones as they enjoy the rhythm of the carousel while riding their favorite character.
+
+These rides not only provide fun but also introduce children to the beloved characters of "Ten Towers Over Mississippi," creating lasting memories for families visiting the park.</p>
+    </section>
+
+    <section id="thrillerRides">
+        <h3>Thriller Rides</h3>
+        <p>Information about thriller rides goes here.</p>
+    </section>
+
+    <section id="adrenalineRides">
+        <h3>Adrenaline Addict's Rides</h3>
+        <p>Information about adrenaline rides goes here.</p>
     </section>
 
     <section id="section2">
         <h2>Guidelines</h2>
-        <p>Content for section 2 goes here.</p>
+        <p>Content for guidelines goes here.</p>
     </section>
 
     <section id="section3">
         <h2>Prices</h2>
-        <p>Content for section 3 goes here.</p>
+        <p>Information about ticket prices goes here.</p>
     </section>
 </main>
 
