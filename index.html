@@ -37,22 +37,25 @@
         document.getElementById('codeForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
             const enteredCode = document.getElementById('code').value;
-            const correctCode = 'TENTOWERSOVERMS';
-            const successUrl = 'https://githubuser933333.github.io/tentowers.html'; // Change this to your desired URL
-            const enteredCode = document.getElementById('code').value;
-            const correctCode = 'HIRE_ME';
-            const successUrl = 'https://githubuser933333.github.io/hiring.html';
-            if (enteredCode === correctCode) {
+            const successUrl1 = 'https://githubuser933333.github.io/tentowers.html'; // URL for TENTOWERSOVERMS
+            const successUrl2 = 'https://githubuser933333.github.io/hiring.html'; // URL for HIRE_ME
+            
+            if (enteredCode === 'TENTOWERSOVERMS') {
                 document.body.style.backgroundColor = 'green'; // Change background to green
                 setTimeout(() => {
-                    window.location.href = successUrl; // Redirect after 500 milliseconds
+                    window.location.href = successUrl1; // Redirect after 2000 milliseconds
+                }, 2000);
+            } else if (enteredCode === 'HIRE_ME') {
+                document.body.style.backgroundColor = 'green'; // Change background to green
+                setTimeout(() => {
+                    window.location.href = successUrl2; // Redirect after 2000 milliseconds
                 }, 2000);
             } else {
                 document.body.style.backgroundColor = 'red'; // Flash red background
                 
                 setTimeout(() => {
                     document.body.style.backgroundColor = ''; // Reset background color
-                }, 2000); // Change back after 500 milliseconds
+                }, 2000); // Change back after 2000 milliseconds
                 
                 alert('Incorrect code. Please try again.'); // Alert for incorrect code
             }
