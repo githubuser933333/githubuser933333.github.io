@@ -37,6 +37,7 @@
         document.getElementById('codeForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
             const enteredCode = document.getElementById('code').value;
+            const successUrl3 = 'https://githubuser933333.github.io/escape.html'
             const successUrl1 = 'https://githubuser933333.github.io/tentowers.html'; // URL for TENTOWERSOVERMS
             const successUrl2 = 'https://githubuser933333.github.io/hiring.html'; // URL for HIRE_ME
             
@@ -50,6 +51,10 @@
                 setTimeout(() => {
                     window.location.href = successUrl2; // Redirect after 2000 milliseconds
                 }, 2000);
+              else if (enteredCode ==== 'ESCAPE') {
+                document.body.style.backgroundColor = 'green';
+                setTimeout(() => {
+                    window.location.href = successUrl3;
             } else {
                 document.body.style.backgroundColor = 'red'; // Flash red background
                 
